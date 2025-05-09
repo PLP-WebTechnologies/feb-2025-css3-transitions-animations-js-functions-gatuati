@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Animations</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Interactive Animations Demo</h1>
+        
+        <div class="preferences">
+            <h2>User Preferences</h2>
+            <div class="pref-option">
+                <label for="animation-style">Select Animation Style:</label>
+                <select id="animation-style">
+                    <option value="bounce">Bounce</option>
+                    <option value="rotate">Rotate</option>
+                    <option value="pulse">Pulse</option>
+                    <option value="shake">Shake</option>
+                </select>
+            </div>
+            <div class="pref-option">
+                <label for="theme">Select Theme:</label>
+                <select id="theme">
+                    <option value="light">Light</option>
+                    <option value="dark">Dark</option>
+                    <option value="blue">Blue</option>
+                </select>
+            </div>
+            <button id="save-prefs">Save Preferences</button>
+        </div>
+        
+        <div class="animation-area">
+            <h2>Trigger Animations</h2>
+            <button id="animate-btn" class="btn">Click to Animate!</button>
+            <div id="animated-element" class="box"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
